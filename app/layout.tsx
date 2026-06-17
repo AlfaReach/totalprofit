@@ -2,7 +2,6 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css"
 import { SchemaOrg } from "@/components/schema-org"
 import { CookieBanner } from "@/components/cookie-banner"
@@ -17,12 +16,12 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Счетоводни услуги в София | Данъчни консултации и ТРЗ | Total Profit",
   description:
-    "Счетоводна кантора в София и Велико Търново с 15+ години опит. Счетоводство, данъчни консултации и ТРЗ обс[...]
+    "Счетоводна кантора в София и Велико Търново с 15+ години опит. Счетоводство, данъчни консултации и ТРЗ обслужване.",
   metadataBase: new URL("https://www.totalprofit.bg"),
   openGraph: {
     title: "Счетоводни услуги в София | Total Profit",
     description:
-      "Счетоводна кантора с 15+ години опит. Законна данъчна оптимизация, ТРЗ и регистрации. Безплатен анализ б�[...]
+      "Счетоводна кантора с 15+ години опит. Законна данъчна оптимизация, ТРЗ и регистрации. Безплатен анализ без задължение.",
     url: "https://www.totalprofit.bg",
     siteName: "Total Profit",
     locale: "bg_BG",
@@ -68,7 +67,6 @@ export default function RootLayout({
         <CookieBanner />
         <AnalyticsLoader />
         <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   )
